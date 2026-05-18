@@ -2,3 +2,7 @@
 course work summer 2026
 
 my name is tyler hummel i am excited to build my website
+
+
+## My Projects
+- [my personal website](https://tyler56798.github.io/)
