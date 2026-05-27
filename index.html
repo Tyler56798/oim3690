@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Hummel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* 60/30/10 palette
+           60% â€” warm off-white background (#f7f5f0)
+           30% â€” deep navy text & secondary surfaces (#1f2d3d)
+           10% â€” warm amber accent (#c47b2e)
+        */
+        :root {
+            --bg: #f7f5f0;
+            --ink: #1f2d3d;
+            --accent: #c47b2e;
+            --muted: #6b7480;
+            --line: #e3ddd2;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 400;
+            background-color: var(--bg);
+            color: var(--ink);
+            line-height: 1.65;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 60px 28px 80px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 28px;
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: -0.01em;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0 0 6px 0;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            margin: 44px 0 14px 0;
+            position: relative;
+            padding-left: 16px;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 12px;
+            bottom: 12px;
+            width: 4px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            color: var(--muted);
+            font-size: 1.15em;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        p {
+            margin: 0 0 14px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            padding: 10px 0 10px 24px;
+            border-bottom: 1px solid var(--line);
+            position: relative;
+        }
+
+        ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 18px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent);
+            border-radius: 50%;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        .accent-text {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: var(--ink);
+            color: var(--bg);
+            padding: 6px 14px;
+            font-size: 0.85em;
+            font-weight: 500;
+            border-radius: 999px;
+            letter-spacing: 0.02em;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.88em;
+            text-align: center;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tyler Hummel</h1>
+            <p class="subtitle">Babson College &middot; Accounting</p>
+        </header>
+
+        <section>
+            <h2>About</h2>
+            <p>
+                I'm Tyler Hummel, a Babson College student concentrating in
+                <span class="accent-text">accounting</span>, currently between my junior and senior year.
+                I'm building this site as part of an AI Web Design class because designing with AI
+                feels like one of the most practical skills to pick up right now.
+            </p>
+            <p>
+                My experience with web design is somewhere between beginner and intermediate &mdash;
+                I've built one site before and I'm currently designing a piece of custom software.
+            </p>
+        </section>
+
+        <section>
+            <h2>What I'm Building</h2>
+            <p>
+                For this class, I'm putting together a simple website for a family member.
+                Outside of class, my main project is back-office management software for
+                accounting and inventory tracking for one of my clients.
+            </p>
+        </section>
+
+        <section>
+            <h2>Tools I Use</h2>
+            <div class="tools">
+                <span class="tag">Claude</span>
+                <span class="tag">Claude Code</span>
+                <span class="tag">Cursor</span>
+                <span class="tag">Cowork</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Interests</h2>
+            <ul>
+                <li>Fishing</li>
+                <li>Camping</li>
+                <li>Weight lifting</li>
+                <li>Side projects</li>
+                <li>Back-office software for accounting &amp; inventory tracking</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Where I'm Headed</h2>
+            <p>
+                After graduation I'm planning to go into <span class="accent-text">accounting</span> &mdash;
+                ideally a path where the technical side of building tools and the financial side
+                of running a business meet.
+            </p>
+        </section>
+
+        <footer>
+            &copy; 2026 Tyler Hummel
+        </footer>
+    </div>
+</body>
+</html>
+<DOCTYPE html>
+<html lang= en>
+<head><title>Hello</title></head><head>
+<body>
+<h1>Hello, my name is Tyler Hummel</h1>
+<p> this is my first hand written HTML page.</p>
+<img src= images/1687278622482.jpg  alt= A test image >
+</body>
+</html>
