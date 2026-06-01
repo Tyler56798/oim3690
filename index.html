@@ -135,6 +135,66 @@
             color: var(--accent);
         }
 
+        /* Before / After demo */
+        .demo-intro {
+            margin-bottom: 16px;
+        }
+
+        .toggle-bar {
+            display: inline-flex;
+            background-color: #fff;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 4px;
+            margin: 8px 0 18px 0;
+        }
+
+        .toggle-btn {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85em;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--muted);
+            background: transparent;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .toggle-btn:hover {
+            color: var(--ink);
+        }
+
+        .toggle-btn.active {
+            background-color: var(--ink);
+            color: var(--bg);
+        }
+
+        .demo-frame {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 6px 18px rgba(31, 45, 61, 0.08);
+        }
+
+        .demo-frame iframe {
+            display: block;
+            width: 100%;
+            height: 520px;
+            border: none;
+        }
+
+        .demo-caption {
+            margin-top: 12px;
+            font-size: 0.85em;
+            color: var(--muted);
+            font-style: italic;
+        }
+
         .accent-text {
             color: var(--accent);
             font-weight: 500;
@@ -172,7 +232,7 @@
 <body>
     <div class="container">
         <nav>
-            <a href="hello.html">Hello page &rarr;</a>
+            <a href="about-me.html">About me &rarr;</a>
         </nav>
 
         <header>
@@ -191,6 +251,29 @@
             <p>
                 My experience with web design is somewhere between beginner and intermediate &mdash;
                 I've built one site before and I'm currently designing a piece of custom software.
+            </p>
+        </section>
+
+        <section>
+            <h2>About Me</h2>
+            <p class="demo-intro">
+                For my AI Web Design class I wrote a basic HTML page by hand
+                (<code>hello.html</code>), then used AI to clean it up and restyle it
+                (<code>about-me.html</code>). Toggle between the two versions to see
+                the difference.
+            </p>
+
+            <div class="toggle-bar" role="tablist">
+                <button type="button" class="toggle-btn active" id="btn-before" role="tab" aria-selected="true">Before</button>
+                <button type="button" class="toggle-btn" id="btn-after" role="tab" aria-selected="false">After (AI Enhanced)</button>
+            </div>
+
+            <div class="demo-frame">
+                <iframe id="demo-iframe" title="Before / after preview" src="hello.html"></iframe>
+            </div>
+
+            <p class="demo-caption">
+                Open full-page: <a href="hello.html">hello.html &rarr;</a> &nbsp;|&nbsp; <a href="about-me.html">about-me.html &rarr;</a>
             </p>
         </section>
 
@@ -237,5 +320,34 @@
             &copy; 2026 Tyler Hummel
         </footer>
     </div>
+
+    <script>
+        // Before / After demo toggle
+        const beforeBtn = document.getElementById('btn-before');
+        const afterBtn = document.getElementById('btn-after');
+        const iframe = document.getElementById('demo-iframe');
+
+        function showBefore() {
+            iframe.setAttribute('src', 'hello.html');
+            beforeBtn.classList.add('active');
+            afterBtn.classList.remove('active');
+            beforeBtn.setAttribute('aria-selected', 'true');
+            afterBtn.setAttribute('aria-selected', 'false');
+        }
+
+        function showAfter() {
+            iframe.setAttribute('src', 'about-me.html');
+            afterBtn.classList.add('active');
+            beforeBtn.classList.remove('active');
+            afterBtn.setAttribute('aria-selected', 'true');
+            beforeBtn.setAttribute('aria-selected', 'false');
+        }
+
+        beforeBtn.addEventListener('click', showBefore);
+        afterBtn.addEventListener('click', showAfter);
+
+        // Default view on load
+        showBefore();
+    </script>
 </body>
 </html>
