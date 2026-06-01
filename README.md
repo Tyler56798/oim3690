@@ -1,8 +1,20 @@
-# oim3690
-course work summer 2026
+# OIM3690 — AI-Powered Web Development
 
-my name is tyler hummel i am excited to build my website
+- **Name**: Tyler Hummel
+- **Semester**: Summer 2026
 
+This is my course repo for OIM3690. It holds class exercises, weekly logs, and links to all my projects.
 
-## My Projects
-- [my personal website](https://tyler56798.github.io/)
+## Projects
+
+| Project | Repo | Live URL |
+|---------|------|----------|
+| Personal Website | [repo](https://github.com/tyler56798/tyler56798.github.io) | [live](https://tyler56798.github.io/) |
+| MP1 — Website for Someone Else | | |
+| MP2 — Interactive Web Tool | | |
+| MP3 — API-Powered App | | |
+| Final Project | | |
+
+## Weekly Logs
+
+See the [logs/](logs/) folder.
