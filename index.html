@@ -117,6 +117,24 @@
             border-bottom: none;
         }
 
+        nav {
+            margin-bottom: 32px;
+            font-size: 0.9em;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.15s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
         .accent-text {
             color: var(--accent);
             font-weight: 500;
@@ -153,6 +171,10 @@
 </head>
 <body>
     <div class="container">
+        <nav>
+            <a href="hello.html">Hello page &rarr;</a>
+        </nav>
+
         <header>
             <h1>Tyler Hummel</h1>
             <p class="subtitle">Babson College &middot; Accounting</p>
