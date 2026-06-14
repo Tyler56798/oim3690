@@ -10,7 +10,7 @@ This is my course repo for OIM3690. It holds class exercises, weekly logs, and l
 | Project | Repo | Live URL |
 |---------|------|----------|
 | Personal Website | [repo](https://github.com/tyler56798/tyler56798.github.io) | [live](https://tyler56798.github.io/) |
-| MP1 — Website for Someone Else | | |
+| MP1 — Website for Someone Else | [repo](https://github.com/Tyler56798/cashin-workforce-site) | [live](https://tyler56798.github.io/cashin-workforce-site/) |
 | MP2 — Interactive Web Tool | | |
 | MP3 — API-Powered App | | |
 | Final Project | | |
