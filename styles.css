@@ -1,0 +1,72 @@
+/* styles.css  -  about-me.html
+   OIM3690 - Week 3 CSS exercise
+   Trying out: element, id, class, and :hover selectors. */
+
+
+/* --- body: set the default font once, everything inherits it --- */
+body {
+    font-family: Georgia, serif;
+    color: #333333;
+    background-color: #fafafa;
+    max-width: 800px;
+    margin: 0 auto;        /* center the page */
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  
+  /* --- element selectors --- */
+  h1 {
+    color: navy;
+  }
+  
+  h2 {
+    color: #444444;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 4px;
+  }
+  
+  /* descendant selector: only links inside the nav */
+  nav a {
+    color: navy;
+    text-decoration: none;
+    margin-right: 12px;
+  }
+  
+  
+  /* --- id selector: only one element on the page (#about) --- */
+  #about {
+    background-color: lightyellow;
+    padding: 12px;
+    border-left: 4px solid navy;
+  }
+  
+  
+  /* --- class selector: reuse on as many elements as I want --- */
+  .card {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .large-font {
+    font-size: 1.3em;
+  }
+  
+  
+  /* --- pseudo-class: hover state for links --- */
+  a:hover {
+    text-decoration: underline;
+    background-color: lightyellow;
+  }
+  
+  
+  /* --- cascade test ---
+     Two rules for the same h1. The LAST one wins because they have the
+     same specificity, so the h1 ends up darkred, not navy.
+     (Predict first, then check in the browser.) */
+  h1 {
+    color: darkred;
+  }
