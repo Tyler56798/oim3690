@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         /* 60/30/10 palette
-           60% â€” warm off-white background (#f7f5f0)
-           30% â€” deep navy text & secondary surfaces (#1f2d3d)
-           10% â€” warm amber accent (#c47b2e)
+           60% â€" warm off-white background (#f7f5f0)
+           30% â€" deep navy text & secondary surfaces (#1f2d3d)
+           10% â€" warm amber accent (#c47b2e)
         */
         :root {
             --bg: #f7f5f0;
@@ -135,6 +135,10 @@
             color: var(--accent);
         }
 
+        nav a + a {
+            margin-left: 18px;
+        }
+
         /* Before / After demo */
         .demo-intro {
             margin-bottom: 16px;
@@ -233,7 +237,7 @@
     <div class="container">
         <nav>
             <a href="about-me.html">About me &rarr;</a>
-            <a href="contact.html" style="margin-left: 18px;">Contact &rarr;</a>
+            <a href="contact.html">Contact &rarr;</a>
         </nav>
 
         <header>
