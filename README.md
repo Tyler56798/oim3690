@@ -11,7 +11,7 @@ This is my course repo for OIM3690. It holds class exercises, weekly logs, and l
 |---------|------|----------|
 | Personal Website | [repo](https://github.com/tyler56798/tyler56798.github.io) | [live](https://tyler56798.github.io/oim3690/) |
 | MP1 — Website for Someone Else | [repo](https://github.com/Tyler56798/cashin-workforce-site) | [live](https://tyler56798.github.io/cashin-workforce-site/) |
-| MP2 — Interactive Web Tool | | [repo](https://github.com/tyler56798/stack-tracker) |
+| MP2 — Interactive Web Tool | [repo](https://github.com/Tyler56798/popup-bagels) | [live](https://tyler56798.github.io/popup-bagels/) |
 | MP3 — API-Powered App | | |
 | Final Project | | |
 
