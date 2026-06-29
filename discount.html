@@ -1,0 +1,16 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<input id="total" placeholder="Total"> <input type="checkbox" id="member"> Member
+<button id="go">Go</button> <span id="out">?</span>
+<script>
+  function getDiscount(total, isMember) {
+    let d = 0;
+    if (total >= 100) d = 0.2;
+    else if (total >= 50) d = 0.1;
+    if (isMember) d = d + 0.05;
+    return total * d;
+  }
+  go.addEventListener("click", () => {
+    let t = parseFloat(total.value);
+    out.textContent = "Discount: " + getDiscount(t, member.checked).toFixed(2);
+  });
+</script>

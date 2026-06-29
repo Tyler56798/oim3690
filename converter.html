@@ -1,0 +1,8 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<input id="c" placeholder="Celsius"> = <span id="f">?</span> F
+<script>
+  c.addEventListener("input", () => {
+    let n = parseFloat(c.value);
+    if (!isNaN(n)) f.textContent = (n * 9 / 5 + 32).toFixed(1);
+  });
+</script>
